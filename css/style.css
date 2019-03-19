@@ -1,0 +1,30 @@
+body{
+        font-family: Arail, sans-serif;
+    }
+    /* Formatting search box */
+    .search-box {
+        position: relative;
+    }
+    .result{
+        position: absolute;        
+        z-index: 999;
+        top: 100%;
+        left: 0;
+    }
+    .search-box input[type="text"], .result{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* Formatting result items */
+    .result li{
+        margin: 2px 0px;
+        padding: 7px 10px;
+        border: 1px solid #CCCCCC;
+        border-top: none;
+        cursor: pointer;
+        transition: all .1s linear;
+    }
+    .result li:hover {
+        background: black;
+        color: white;
+    }
